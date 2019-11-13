@@ -20,7 +20,6 @@ namespace isa
     }
     public class IsaHub : Hub
     {
-        Dictionary<String, Boolean?> Lamps = new Dictionary<string, bool?>();
 
         public void Sendlocalization(string name, Boolean status)
         {
