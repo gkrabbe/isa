@@ -1,0 +1,126 @@
+﻿#image {
+    width: 800px;
+    height: 800px;
+    background-size: 100% 100%;
+    background-image: url('../a.png');
+}
+
+.init {
+    display: none;
+}
+
+#sala1 {
+    position: absolute;
+    background-color: rgba(55, 0, 255, 0.829);
+    color: #fff;
+    text-align: center;
+    top: 355px;
+    width: 265px;
+    margin-left: 68px;
+    line-height: 154px;
+    height: auto;
+}
+
+#sala2 {
+    position: absolute;
+    background-color: rgba(218, 23, 23, 0.849);
+    color: #fff;
+    text-align: center;
+    top: 509px;
+    width: 265px;
+    margin-left: 66px;
+    line-height: 280px;
+    height: auto;
+}
+
+#quarto1 {
+    position: absolute;
+    background-color: rgba(255, 136, 0, 0.973);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    top: 445px;
+    width: 393px;
+    margin-left: 345px;
+    line-height: 246px;
+    height: auto;
+}
+
+#corredor {
+    position: absolute;
+    background-color: rgba(157, 255, 0, 0.822);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    top: 355px;
+    width: 404px;
+    margin-left: 333px;
+    line-height: 80px;
+    height: auto;
+}
+
+#quarto2 {
+    position: absolute;
+    background-color: rgba(255, 15, 135, 0.541);
+    color: rgb(2, 2, 2);
+    text-align: center;
+    top: 150px;
+    width: 262px;
+    margin-left: 475px;
+    line-height: 213px;
+    height: auto;
+}
+
+#banheiro {
+    position: absolute;
+    background-color: rgba(15, 255, 203, 0.719);
+    color: rgb(2, 2, 2);
+    text-align: center;
+    top: 150px;
+    width: 119px;
+    margin-left: 344px;
+    line-height: 193px;
+    height: auto;
+}
+
+#cozinha {
+    position: absolute;
+    background-color: rgba(252, 186, 5, 0.877);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    top: 150px;
+    width: 265px;
+    margin-left: 65px;
+    line-height: 195px;
+    height: auto;
+}
+
+#fora {
+    position: absolute;
+    background-color: rgba(144, 147, 184, 0.822);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    top: 704px;
+    width: 405px;
+    margin-left: 345px;
+    line-height: 105px;
+    height: auto;
+}
+
+#boxes {
+    margin-top: -330px;
+    width: 605px;
+    margin-left: 845px;
+    line-height: 35px;
+    font-size: x-large;
+}
+
+#servico {
+    position: absolute;
+    background-color: rgba(235, 252, 5, 0.897);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    top: 20px;
+    width: 295px;
+    margin-left: 52px;
+    line-height: 118px;
+    height: auto;
+}
