@@ -47,7 +47,7 @@ Tensor = torch.cuda.FloatTensor
 
 # In[20]:
 
-input("press ENTER to start VISIO")
+enput("press ENTER to start VISIO")
 
 session = Session()
 connection = Connection("http://127.0.0.1:8088/signalr", session)
