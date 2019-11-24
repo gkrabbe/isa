@@ -29,6 +29,9 @@
     <Compile Include="utils\datasets.py" />
     <Compile Include="utils\parse_config.py" />
     <Compile Include="utils\utils.py" />
+    <Compile Include="utils\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="config\" />

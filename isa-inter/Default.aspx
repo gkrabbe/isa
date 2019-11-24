@@ -28,7 +28,8 @@
     <input type="radio" name="local" id='ccozinha' ></input> COZINHA<br>
     <input type="radio" name="local" disabled="disabled" id='cquarto1' ></input> QUARTO1<br>
     <input type="radio" name="local" id='cquarto2' ></input> QUARTO2<br>
-    <input type="radio" name="local" id='ccorredor' ></input> CORREDOR<br>
+    <input type="radio" name="local"  disabled="disabled"
+        id='ccorredor' ></input> CORREDOR<br>
     <input type="radio" name="local" id='cbanheiro' ></input> BANHEIRO<br>
     <input type="radio" name="local" id='cfora' ></input> FORA DE CASA<br>
     <input type="radio" name="local" id='cservico' ></input>AREA DE SERVICO<br>

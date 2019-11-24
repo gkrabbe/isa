@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+print("")
+
 import time
 from requests import Session
 from signalr import Connection

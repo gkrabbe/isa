@@ -1,7 +1,7 @@
-#!/usr/bin/env python
 # coding: utf-8
 
-# In[15]:
+print("1")
+
 
 import os
 import sys 
@@ -10,7 +10,7 @@ import torch
 import random
 import datetime
 
-from utils import *
+from utils import utils
 from models import *
 
 import matplotlib.pyplot as plt
@@ -25,7 +25,7 @@ from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
 
 
-# In[16]:
+print("2")
 
 
 class_path='config/coco.names'
@@ -45,7 +45,7 @@ classes = utils.load_classes(class_path)
 Tensor = torch.cuda.FloatTensor
 
 
-# In[20]:
+print("3")
 
 input("press ENTER to start VISIO")
 
@@ -56,7 +56,7 @@ connection.start()
 
 print("started")
 
-# In[12]:
+print("4")
 
 
 def detect_image(img):
@@ -82,7 +82,7 @@ def detect_image(img):
     return detections[0]
 
 
-# In[23]:
+print("5")
 
 
 import cv2
@@ -131,30 +131,24 @@ while(True):
 
             color = colors[int(obj_id) % len(colors)]
             color = [i * 255 for i in color]
-            cls = classes[int(cls_pred)]
+            try:
+                cls = classes[int(cls_pred)]
+            except:
+                cls = "desconhecido"
             cv2.rectangle(frame2, (x1, y1), (x1+box_w, y1+box_h), color, 4)
             cv2.rectangle(frame2, (x1, y1-35), (x1+len(cls)*19+60, y1), color, -1)
             cv2.putText(frame2, cls + "-" + str(int(obj_id)), (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 1, (255,255,255), 3)
     if(detect_person >=1):
-        if(not status):            
-            chat.server.invoke('sendlocalization', 'cquarto1', True)
-            status = True
+        chat.server.invoke('sendlocalization', 'cquarto1', True)
+
     else:
-         if(status):            
-            chat.server.invoke('sendlocalization', 'cquarto1', False)
-            status = False
+        chat.server.invoke('sendlocalization', 'cquarto1', False)
+            
             
     cv2.imshow('Camera',  frame2)
     if cv2.waitKey(1) != -1:
-        break
+        cv2.waitKey(0)
     cls_pred
-vid.release()
-cv2.destroyAllWindows()
-
-
-# In[22]:
-
-
 vid.release()
 cv2.destroyAllWindows()
 

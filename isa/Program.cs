@@ -10,7 +10,8 @@ namespace isa
 {
     class Program
     {
-        static string url = "http://127.0.0.1:8088/";
+        static string url = "http://*:8088/";
+        //static string url = "http://127.0.0.1:8088/";
         static void Main(string[] args)
         {            
             var SignalR = WebApp.Start(url);
